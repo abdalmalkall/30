@@ -1,20 +1,61 @@
 body {
+    background-image: url('40.jpg');
+    background-size: cover; /* لتغطية الخلفية بالكامل */
+    background-position: center; /* لجعل الصورة في المنتصف */
+    color: white; /* تغيير لون النص ليتناسب مع الخلفية */
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
+    margin: 0; /* لإزالة المسافات الافتراضية */
+    height: 100vh; /* لجعل ارتفاع الجسم يغطي كامل ارتفاع الشاشة */
+    width: 100%; /* لجعل العرض يتكيف مع عرض الشاشة */
 }
 
-button {
+header {
+    padding: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.product {
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية داكنة للنصوص */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buy-button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #FF6347;
     color: white;
+    font-size: 1.2em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.buy-button:hover {
+    background-color: #FF4500;
 }
