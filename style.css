@@ -59,3 +59,42 @@ p {
 .buy-button:hover {
     background-color: #FF4500;
 }
+
+footer {
+    background-color: rgb(44, 42, 42); /* خلفية سوداء */
+    color: white; /* لون النص */
+    padding: 1;
+    text-align: center;
+    font-size: 1.1em;
+    position: fixed; /* جعل الفوتر ثابتاً */
+    bottom: 0; /* لجعله في أسفل الصفحة */
+    left: 0;
+    width: 100%;
+    z-index: 10; /* لضمان أن يكون الـ footer فوق أي عنصر آخر */
+}
+
+footer a {
+    color: #25D366; /* اللون المميز لواتساب */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* استجابة التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    .product {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .buy-button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
